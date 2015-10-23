@@ -1,7 +1,4 @@
-/*
- * -- BASE STYLES --
- * Most of these are inherited from Base, but I want to change a few.
- */
+
 body {
     color: #333;
 }
@@ -14,9 +11,7 @@ a {
 }
 
 
-/*
- * -- HELPER STYLES --
- * Over-riding some of the .pure-button styles to make my buttons look unique
+ /* Over-riding some of the .pure-button styles to make my buttons look unique
  */
 .primary-button,
 .secondary-button {
@@ -47,11 +42,12 @@ a {
  * -- LAYOUT STYLES --
  * This layout consists of three main elements, `#nav` (navigation bar), `#list` (post list), and `#main` (post content). All 3 elements are within `#layout`
  */
-#layout, #nav,  {
+#layout  {
     margin: 0;
     padding: 0;
 }
 #list{
+
 
     
 }
@@ -112,50 +108,23 @@ a {
     }
 
 
-/*
- * -- post STYLES --
- * Styles relevant to the post messages, labels, counts, and more.
- */
-.post-count {
-    color: rgb(75, 113, 151);
-}
-
-.post-label-personal,
-.post-label-work,
-.post-label-travel {
-    width: 15px;
-    height: 15px;
-    display: inline-block;
-    margin-right: 0.5em;
-    border-radius: 3px;
-}
-.post-label-personal {
-    background: #ffc94c;
-}
-.post-label-work {
-    background: #41ccb4;
-}
-.post-label-travel {
-    background: #40c365;
-}
-
 
 /* post Item Styles */
 .post-item {
     padding: 0.9em 1em;
     border-bottom: 1px solid #ddd;
-    border-left: 4px solid transparent;
-    width: 100%;
+    border-left: 4px solid transparent; 
+
+
 }
-    .post-avatar {
-    padding: 0.9em 1em;
-        border-radius: 3px;
-        margin-right: 0.5em;
+.pure-g{
+
     }
+    
     .post-name,
     .post-subject {
         margin: 0;
-            padding: 0.9em 1em;
+            padding: 0.9em 0em;
 
     }
     .post-name {
@@ -165,60 +134,19 @@ a {
     }
     .post-desc {
         font-size: 80%;
-        margin: 0.4em 0;
+        margin: 0.4em 0em;
 
     }
 
-.post-item-selected {
-    background: #eee;
-}
-.post-item-unread {
-    border-left: 6px solid #1b98f8;
-}
-
-/* post Content Styles */
-.post-content-header, .post-content-body, .post-content-footer {
-    padding: 1em 2em;
-    width: 100%;
-
-}
-    .post-content-header {
-        border-bottom: 1px solid #ddd;
-    }
-
-        .post-content-title {
-            margin: 0.5em 0 0;
-        }
-        .post-content-subtitle {
-            font-size: 1em;
-            margin: 0;
-            font-weight: normal;
-        }
-            .post-content-subtitle span {
-                color: #999;
-            }
-    .post-content-controls {
-        margin-top: 2em;
-        text-align: right;
-    }
-        .post-content-controls .secondary-button {
-            margin-bottom: 0.3em;
-        }
-
-    .post-avatar {
-        width: 40px;
-        height: 40px;
-    }
 
 
 /*
  * -- TABLET (AND UP) MEDIA QUERIES --
- * On tablets and other medium-sized devices, we want to customize some
+ * On tablets and other medium-sized devices,  customize some
  * of the mobile styles.
  */
 @media (min-width: 40em) {
 
-    /* Move the layout over so we can fit the nav + list in on the left */
     #layout {
         padding-left:500px; /* "left col (nav + list)" width */
         position: absolute;
@@ -303,6 +231,7 @@ opacity: 0.8;
         padding-left: 100px;
         height: 29px;
 }
+
 /*
  * -- DESKTOP (AND UP) MEDIA QUERIES --
  * On desktops and other large-sized devices, we want to customize some
@@ -313,7 +242,6 @@ opacity: 0.8;
     /* This will take up the entire height, and be a little thinner */
     #list {
         margin-left: -250px;
-        width:100%;
         height: 100%;
         border-right: 1px solid #ddd;
     }
